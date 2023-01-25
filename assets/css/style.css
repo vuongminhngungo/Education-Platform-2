@@ -1,1 +1,214 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sen:wght@700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 17px;
+  min-width: 118px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  background-color: #171100;
+  border-radius: 24.5px;
+}
+
+main .header {
+  background: #fffcf4;
+}
+main .header.fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -28px;
+}
+main .header .container .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+main .header .container .body .nav {
+  margin-left: auto;
+}
+main .header .container .body .nav ul {
+  display: flex;
+}
+main .header .container .body .nav ul li a {
+  position: relative;
+  padding: 8px 21px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  text-align: center;
+  color: #5f5b53;
+}
+main .header .container .body .nav ul li.active a {
+  font-weight: 600;
+  color: #171100;
+}
+main .header .container .body .nav ul li.active a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  width: 12px;
+  height: 2px;
+  background-color: #171100;
+  border-radius: 1px;
+}
+main .header .container .body .nav ul li:hover a {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+main .header .container .body .action {
+  margin-left: 48px;
+}
+main .header .container .body .action a.sign-up-btn {
+  min-width: 144px;
+}
+main .hero {
+  padding-top: 56px;
+  background-color: #fffcf4;
+}
+main .hero .container .body {
+  display: flex;
+}
+main .hero .container .body .media-block {
+  width: 48%;
+  position: relative;
+}
+main .hero .container .body .media-block .img {
+  width: 470px;
+  height: 685px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+main .hero .container .body .media-block .hero-summary {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  width: 270px;
+  padding: 28px 24px;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+main .hero .container .body .media-block .hero-summary .item {
+  display: flex;
+  cursor: pointer;
+}
+main .hero .container .body .media-block .hero-summary .item .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff9e8;
+}
+main .hero .container .body .media-block .hero-summary .item .info {
+  margin-left: 16px;
+}
+main .hero .container .body .media-block .hero-summary .item .info p.label {
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+main .hero .container .body .media-block .hero-summary .item .info p.title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+main .hero .container .body .media-block .hero-summary .item + .item {
+  margin-top: 22px;
+}
+main .hero .container .body .media-block .hero-summary .item:nth-of-type(2) .icon {
+  background: #fcefff;
+}
+main .hero .container .body .media-block .hero-summary .item:nth-of-type(3) .icon {
+  background: #ebeaff;
+}
+main .hero .container .body .content-block {
+  width: 52%;
+  padding: 64px 0 0 130px;
+}
+main .hero .container .body .content-block .headding {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+main .hero .container .body .content-block .desc {
+  margin: 22px 0;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+main .hero .container .body .content-block .cta-group {
+  margin: 38px 0 48px;
+  display: flex;
+  align-items: center;
+}
+main .hero .container .body .content-block .cta-group .hero-cta {
+  display: inline-block;
+  min-width: 180px;
+  padding: 24px 0;
+  border-radius: 32px;
+  background: #ffb900;
+}
+main .hero .container .body .content-block .cta-group .hero-cta:hover {
+  opacity: 0.9;
+}
+main .hero .container .body .content-block .cta-group .watch-video {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  border: none;
+  background-color: transparent;
+}
+main .hero .container .body .content-block .cta-group .watch-video .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+  cursor: pointer;
+}
+main .hero .container .body .content-block .cta-group .watch-video span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+  cursor: pointer;
+}
+main .hero .container .body .content-block .desc:last-of-type strong {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.23;
+  color: #171100;
+  padding: 0 10px 0 28px;
+}/*# sourceMappingURL=style.css.map */
